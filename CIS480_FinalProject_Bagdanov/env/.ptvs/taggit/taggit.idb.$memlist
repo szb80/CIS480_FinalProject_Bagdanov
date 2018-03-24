@@ -1,0 +1,10 @@
+apps
+views
+forms
+VERSION
+managers
+models
+migrations
+default_app_config
+admin
+utils

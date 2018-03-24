@@ -1,0 +1,15 @@
+﻿<section>
+    <h5>Documentation</h5>
+</section>
+<div class="divider"></div>
+
+{% if filelist %}
+    <ul>
+    {% for event in filelist %}
+        <li><a href="/event/{{event.id}}"
+               >{{ event.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No items are available.</p>
+{% endif %}

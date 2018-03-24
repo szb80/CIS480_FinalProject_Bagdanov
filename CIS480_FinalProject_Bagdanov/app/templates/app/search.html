@@ -1,0 +1,47 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- page header -->
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <br>
+                <h1 class="header center white-text blur">{{ title }}</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light"><i class="material-icons">search</i> Search bar here</h5>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="parallax">
+            <img src="../../static/img/Search.jpg" />
+        </div>
+    </div> <!-- end page header -->
+
+    <!-- Sidebar Navigation -->
+    <div class="col l3 blue lighten-4">
+        {% include 'app/sidebar.html' %}
+    </div> <!-- end sidebar nav -->
+
+    <!-- Search Bar (included in header)
+    <div class="col l9 blue">
+        <p><i class="material-icons">search</i>Search bar</p>
+    </div> -->
+
+    <!-- Main Page Content -->
+    <div class="col l9 blue darken-2">
+        <h2>Main page content here</h2>
+        <h4>Document Title</h4>
+        <h6>Keyword1, Keyword2, Keyword3</h6>
+        <p>Preview or link to document itself</p>
+
+    </div> <!-- end main page content -->
+
+{% endblock %}
+
+
+
+

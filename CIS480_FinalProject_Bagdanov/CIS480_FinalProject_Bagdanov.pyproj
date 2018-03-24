@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>CIS480_FinalProject_Bagdanov</Name>
+    <RootNamespace>CIS480_FinalProject_Bagdanov</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d8ceed41-ee1d-4d99-99b0-253ebdc7c565</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>CIS480_FinalProject_Bagdanov.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="CIS480_FinalProject_Bagdanov\__init__.py" />
+    <Compile Include="CIS480_FinalProject_Bagdanov\settings.py" />
+    <Compile Include="CIS480_FinalProject_Bagdanov\urls.py" />
+    <Compile Include="CIS480_FinalProject_Bagdanov\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\fonts\roboto\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\img\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="CIS480_FinalProject_Bagdanov\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\migrations\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\static\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\static\css\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\static\img\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\static\js\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\static\js\cors\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\static\js\vendor\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templates\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templates\fileupload\" />
+    <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templatetags\" />
+    <Folder Include="fileupload\" />
+    <Folder Include="fileupload\migrations\" />
+    <Folder Include="fileupload\static\" />
+    <Folder Include="fileupload\static\css\" />
+    <Folder Include="fileupload\static\img\" />
+    <Folder Include="fileupload\static\js\" />
+    <Folder Include="fileupload\static\js\cors\" />
+    <Folder Include="fileupload\static\js\vendor\" />
+    <Folder Include="fileupload\templates\" />
+    <Folder Include="fileupload\templates\fileupload\" />
+    <Folder Include="fileupload\templatetags\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\materialize.css" />
+    <Content Include="app\static\app\content\materialize.min.css" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="app\static\app\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\materialize.js" />
+    <Content Include="app\static\app\scripts\materialize.min.js" />
+    <Content Include="app\static\img\home.jpg" />
+    <Content Include="app\static\img\loading.gif" />
+    <Content Include="app\static\img\progressbar.gif" />
+    <Content Include="app\static\app\scripts\init.js" />
+    <Content Include="app\templates\app\default.html" />
+    <Content Include="app\templates\app\department_template.html" />
+    <Content Include="app\templates\app\footer.html" />
+    <Content Include="app\templates\app\registerdriver.html" />
+    <Content Include="app\templates\app\success.html" />
+    <Content Include="app\templates\app\topnavbar.html" />
+    <Content Include="app\templates\app\upload.html" />
+    <Content Include="app\templates\app\search.html" />
+    <Content Include="app\templates\app\administration_list.html" />
+    <Content Include="app\templates\app\administration.html" />
+    <Content Include="app\templates\app\billing_list.html" />
+    <Content Include="app\templates\app\billing.html" />
+    <Content Include="app\templates\app\collections_list.html" />
+    <Content Include="app\templates\app\collections.html" />
+    <Content Include="app\templates\app\customer_service_list.html" />
+    <Content Include="app\templates\app\customer_service.html" />
+    <Content Include="app\templates\app\field_service_list.html" />
+    <Content Include="app\templates\app\field_service.html" />
+    <Content Include="app\templates\app\sidebar.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

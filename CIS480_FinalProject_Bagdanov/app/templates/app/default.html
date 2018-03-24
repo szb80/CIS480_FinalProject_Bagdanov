@@ -1,0 +1,31 @@
+﻿{% extends "app/layout.html" %}
+
+<!--
+    Template to show div setup and layout
+-->
+
+{% block content %}
+    <!-- page header -->
+    <div class="col l12 center-align blue lighten-3">
+        <h1>{{ title }}</h1>
+    </div> <!-- end page header -->
+
+    <!-- Sidebar Navigation -->
+    <div class="col l3 blue lighten-4">
+        {% include 'app/sidebar.html' %}
+    </div> <!-- end sidebar nav -->
+
+    <!-- Search Bar -->
+    <div class="col l9 blue">
+        <p><i class="material-icons">search</i>Search bar</p>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="col l9 blue darken-2">
+        <h2>Main page content here</h2>
+        <h4>{{ title }}</h4>
+        <p>{{ message }}</p>
+
+    </div> <!-- end main page content -->
+
+{% endblock %}

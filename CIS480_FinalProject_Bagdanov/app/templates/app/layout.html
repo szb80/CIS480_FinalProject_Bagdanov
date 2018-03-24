@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - UBCI</title>
+    {% load staticfiles %}
+    <!-- Import CSS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="{% static 'app/content/materialize.css' %}"  media="screen,projection"/>
+    <script type="text/javascript" src="{% static 'app/scripts/materialize.min.js' %}"></script>
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <link type="text/css" rel="stylesheet" href="{% static 'app/content/site.css' %}" />
+
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- top navbar include -->
+    {% include 'app/topnavbar.html' %}
+
+    <!-- template content block -->
+    {% block content %}{% endblock %}
+    
+    <!-- back to top button -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light" href="#top" data-toggle="tooltip" title="Back to top">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div> <!-- end back to top button -->
+
+    <!-- footer include -->
+    {% include 'app/footer.html' %}
+
+    <!-- JQuery and Materialize JS -->
+
+    <script src="{% static 'app/scripts/init.js' %}"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.fixed-action-btn').floatingActionButton();
+            $('[data-toggle="tooltip"]').tooltip();
+  });
+    </script>
+
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>
