@@ -9,9 +9,39 @@ from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, 
 from django.template import RequestContext
 from datetime import datetime
 from django.utils import timezone
+from django.views.generic.edit import CreateView
 
-from .models import *
+from .models import Document, Department
 from .forms import *
+import json
+
+def get_department(request):
+  if request.is_ajax():
+    q = request.GET.get('term', '')
+    depts = Department.objects.filter(name__icontains=q)
+    results = []
+    for d in depts:
+      d_json = {}
+      d_json = d.name
+      results.append(d_json)
+    data = json.dumps(results)
+  else:
+    data = 'fail'
+  mimetype = 'application/json'
+  return HttpResponse(data, mimetype)
+
+# search view 
+def search(request):
+    if request.is_ajax():
+        q = request.GET.get('q')
+        if q is not None:            
+            results = Document.objects.filter(  
+            	Q( title__contains = q ) |
+                Q( description__contains = q ) |
+                Q( description__contains = q )
+                )          
+            return render_to_response('results.html', {'results': results}, 
+                                       context_instance = RequestContext(request))
 
 
 def home(request):
@@ -95,9 +125,9 @@ def search(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/search.html',
+        'app/searchtest.html',
         {
-            'title':'Search',
+            'title':'Search Test',
             'message':'Your search page.',
             'year':datetime.now().year,
         }
@@ -182,3 +212,5 @@ def adddriver(request):
     elif request.method == "GET":
         form = adddriverform()
         return render(request, "app/registerdriver.html", {'form': form})
+
+#################################################################################

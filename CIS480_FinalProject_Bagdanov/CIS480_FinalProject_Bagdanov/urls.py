@@ -26,10 +26,13 @@ urlpatterns = [
     url(r'^upload/$', app.views.upload, name='upload'),
     url(r'^calendar/$', app.views.calendar, name='calendar'),
 
+    url(r'^api/get_department/', app.views.get_department, name='get_department'),
+
     # TESTING template to test div layout
     url(r'^default$', app.views.default, name='default'),
     url(r'^register/$', app.views.adddriver, name='adddriver'),
 
+    #################################
 
     url(r'^login/$',
         django.contrib.auth.views.login,

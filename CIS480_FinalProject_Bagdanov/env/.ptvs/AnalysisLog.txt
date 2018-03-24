@@ -4165,3 +4165,34 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extens
 2018-03-23T21:33:25: Saving group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\taggit"
 2018-03-23T21:33:25: End of group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\taggit"
 2018-03-23T21:33:28: Deleting 0 files
+
+2018-03-24T01:11:32: Start analysis
+2018-03-24T01:11:32: IncludeModulesFromModulePath = win32com
+2018-03-24T01:11:35: Including c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks because widget_tweaks.models needs updating
+2018-03-24T01:11:35: Deleting 0 files
+2018-03-24T01:11:35: astropy.CallDepth = 0
+2018-03-24T01:11:35: delphixpy.CallDepth = 0
+2018-03-24T01:11:35: matplotlib.CallDepth = 3
+2018-03-24T01:11:35: pandas.CallDepth = 0
+2018-03-24T01:11:35: sympy.CallDepth = 0
+2018-03-24T01:11:35: Start group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks" with 5 files
+2018-03-24T01:11:36: Parsing complete
+2018-03-24T01:11:36: Analyzing "widget_tweaks.models" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\models.py")
+2018-03-24T01:11:36: Analyzing "widget_tweaks.tests" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\tests.py")
+2018-03-24T01:11:36: Analyzing "widget_tweaks" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\__init__.py")
+2018-03-24T01:11:36: Analyzing "widget_tweaks.templatetags.widget_tweaks" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\templatetags\widget_tweaks.py")
+2018-03-24T01:11:36: Analyzing "widget_tweaks.templatetags" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\templatetags\__init__.py")
+2018-03-24T01:11:36: Starting analysis of 5 modules
+2018-03-24T01:11:38: Analysis complete
+2018-03-24T01:11:38: Saving group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks"
+2018-03-24T01:11:38: End of group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks"
+2018-03-24T01:11:41: Deleting 0 files
+
+2018-03-24T01:43:14: Start analysis
+2018-03-24T01:43:14: IncludeModulesFromModulePath = win32com
+2018-03-24T01:43:17: Deleting 5 files
+2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.idb"
+2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.models.idb"
+2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.templatetags.idb"
+2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.templatetags.widget_tweaks.idb"
+2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.tests.idb"

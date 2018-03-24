@@ -107,6 +107,7 @@
     <Content Include="app\templates\app\department_template.html" />
     <Content Include="app\templates\app\footer.html" />
     <Content Include="app\templates\app\registerdriver.html" />
+    <Content Include="app\templates\app\searchtest.html" />
     <Content Include="app\templates\app\success.html" />
     <Content Include="app\templates\app\topnavbar.html" />
     <Content Include="app\templates\app\upload.html" />
