@@ -4196,3 +4196,104 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extens
 2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.templatetags.idb"
 2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.templatetags.widget_tweaks.idb"
 2018-03-24T01:43:17: Deleting "C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\env\.ptvs\widget_tweaks\widget_tweaks.tests.idb"
+
+2018-03-24T22:59:54: Start analysis
+2018-03-24T22:59:55: IncludeModulesFromModulePath = win32com
+2018-03-24T22:59:58: Including c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack because haystack.admin needs updating
+2018-03-24T22:59:58: Deleting 0 files
+2018-03-24T22:59:58: astropy.CallDepth = 0
+2018-03-24T22:59:58: delphixpy.CallDepth = 0
+2018-03-24T22:59:58: matplotlib.CallDepth = 3
+2018-03-24T22:59:58: pandas.CallDepth = 0
+2018-03-24T22:59:58: sympy.CallDepth = 0
+2018-03-24T22:59:58: Start group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack" with 40 files
+2018-03-24T22:59:59: Parsing complete
+2018-03-24T22:59:59: Analyzing "haystack.admin" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\admin.py")
+2018-03-24T22:59:59: Analyzing "haystack.apps" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\apps.py")
+2018-03-24T22:59:59: Analyzing "haystack.constants" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\constants.py")
+2018-03-24T22:59:59: Analyzing "haystack.exceptions" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\exceptions.py")
+2018-03-24T22:59:59: Analyzing "haystack.fields" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\fields.py")
+2018-03-24T22:59:59: Analyzing "haystack.forms" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\forms.py")
+2018-03-24T22:59:59: Analyzing "haystack.generic_views" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\generic_views.py")
+2018-03-24T22:59:59: Analyzing "haystack.indexes" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\indexes.py")
+2018-03-24T22:59:59: Analyzing "haystack.inputs" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\inputs.py")
+2018-03-24T22:59:59: Analyzing "haystack.manager" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\manager.py")
+2018-03-24T22:59:59: Analyzing "haystack.models" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\models.py")
+2018-03-24T22:59:59: Analyzing "haystack.panels" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\panels.py")
+2018-03-24T22:59:59: Analyzing "haystack.query" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\query.py")
+2018-03-24T22:59:59: Analyzing "haystack.routers" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\routers.py")
+2018-03-24T22:59:59: Analyzing "haystack.signals" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\signals.py")
+2018-03-24T22:59:59: Analyzing "haystack.urls" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\urls.py")
+2018-03-24T22:59:59: Analyzing "haystack.views" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\views.py")
+2018-03-24T22:59:59: Analyzing "haystack" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\__init__.py")
+2018-03-24T22:59:59: Analyzing "haystack.backends.elasticsearch2_backend" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\backends\elasticsearch2_backend.py")
+2018-03-24T22:59:59: Analyzing "haystack.backends.elasticsearch_backend" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\backends\elasticsearch_backend.py")
+2018-03-24T22:59:59: Analyzing "haystack.backends.simple_backend" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\backends\simple_backend.py")
+2018-03-24T22:59:59: Analyzing "haystack.backends.solr_backend" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\backends\solr_backend.py")
+2018-03-24T22:59:59: Analyzing "haystack.backends.whoosh_backend" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\backends\whoosh_backend.py")
+2018-03-24T22:59:59: Analyzing "haystack.backends" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\backends\__init__.py")
+2018-03-24T22:59:59: Analyzing "haystack.management" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\__init__.py")
+2018-03-24T22:59:59: Analyzing "haystack.management.commands.build_solr_schema" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\commands\build_solr_schema.py")
+2018-03-24T22:59:59: Analyzing "haystack.management.commands.clear_index" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\commands\clear_index.py")
+2018-03-24T22:59:59: Analyzing "haystack.management.commands.haystack_info" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\commands\haystack_info.py")
+2018-03-24T22:59:59: Analyzing "haystack.management.commands.rebuild_index" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\commands\rebuild_index.py")
+2018-03-24T22:59:59: Analyzing "haystack.management.commands.update_index" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\commands\update_index.py")
+2018-03-24T22:59:59: Analyzing "haystack.management.commands" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\management\commands\__init__.py")
+2018-03-24T22:59:59: Analyzing "haystack.templatetags.highlight" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\templatetags\highlight.py")
+2018-03-24T22:59:59: Analyzing "haystack.templatetags.more_like_this" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\templatetags\more_like_this.py")
+2018-03-24T22:59:59: Analyzing "haystack.templatetags" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\templatetags\__init__.py")
+2018-03-24T22:59:59: Analyzing "haystack.utils.app_loading" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\utils\app_loading.py")
+2018-03-24T22:59:59: Analyzing "haystack.utils.geo" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\utils\geo.py")
+2018-03-24T22:59:59: Analyzing "haystack.utils.highlighting" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\utils\highlighting.py")
+2018-03-24T22:59:59: Analyzing "haystack.utils.loading" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\utils\loading.py")
+2018-03-24T22:59:59: Analyzing "haystack.utils.log" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\utils\log.py")
+2018-03-24T22:59:59: Analyzing "haystack.utils" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack\utils\__init__.py")
+2018-03-24T22:59:59: Starting analysis of 40 modules
+2018-03-24T23:00:02: Analysis complete
+2018-03-24T23:00:02: Saving group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack"
+2018-03-24T23:00:03: [ERROR] haystack.management.commands.build_solr_schema.Command.Command: Unknown has no name
+2018-03-24T23:00:03: [ERROR] haystack.backends.whoosh_backend.WhooshSearchBackend.WhooshSearchBackend: Unknown has no name
+2018-03-24T23:00:03: [ERROR] haystack.backends.whoosh_backend.WhooshSearchQuery.WhooshSearchQuery: Unknown has no name
+2018-03-24T23:00:03: [ERROR] haystack.backends.SearchNode.SearchNode: Unknown has no name
+2018-03-24T23:00:03: [ERROR] haystack.backends.elasticsearch_backend.ElasticsearchSearchBackend.ElasticsearchSearchBackend: Unknown has no name
+2018-03-24T23:00:03: End of group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\haystack"
+2018-03-24T23:00:05: Deleting 0 files
+
+2018-03-24T23:02:31: Start analysis
+2018-03-24T23:02:32: IncludeModulesFromModulePath = win32com
+2018-03-24T23:02:35: Deleting 40 files
+
+2018-03-24T23:20:37: Start analysis
+2018-03-24T23:20:37: IncludeModulesFromModulePath = win32com
+2018-03-24T23:20:40: Including c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters because django_filters.compat needs updating
+2018-03-24T23:20:40: Deleting 0 files
+2018-03-24T23:20:40: astropy.CallDepth = 0
+2018-03-24T23:20:40: delphixpy.CallDepth = 0
+2018-03-24T23:20:40: matplotlib.CallDepth = 3
+2018-03-24T23:20:40: pandas.CallDepth = 0
+2018-03-24T23:20:40: sympy.CallDepth = 0
+2018-03-24T23:20:40: Start group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters" with 16 files
+2018-03-24T23:20:41: Parsing complete
+2018-03-24T23:20:41: Analyzing "django_filters.compat" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\compat.py")
+2018-03-24T23:20:41: Analyzing "django_filters.conf" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\conf.py")
+2018-03-24T23:20:41: Analyzing "django_filters.constants" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\constants.py")
+2018-03-24T23:20:41: Analyzing "django_filters.exceptions" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\exceptions.py")
+2018-03-24T23:20:41: Analyzing "django_filters.fields" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\fields.py")
+2018-03-24T23:20:41: Analyzing "django_filters.filters" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\filters.py")
+2018-03-24T23:20:41: Analyzing "django_filters.filterset" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\filterset.py")
+2018-03-24T23:20:41: Analyzing "django_filters.models" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\models.py")
+2018-03-24T23:20:41: Analyzing "django_filters.utils" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\utils.py")
+2018-03-24T23:20:41: Analyzing "django_filters.views" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\views.py")
+2018-03-24T23:20:41: Analyzing "django_filters.widgets" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\widgets.py")
+2018-03-24T23:20:41: Analyzing "django_filters" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\__init__.py")
+2018-03-24T23:20:41: Analyzing "django_filters.rest_framework.backends" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\rest_framework\backends.py")
+2018-03-24T23:20:41: Analyzing "django_filters.rest_framework.filters" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\rest_framework\filters.py")
+2018-03-24T23:20:41: Analyzing "django_filters.rest_framework.filterset" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\rest_framework\filterset.py")
+2018-03-24T23:20:41: Analyzing "django_filters.rest_framework" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters\rest_framework\__init__.py")
+2018-03-24T23:20:41: Starting analysis of 16 modules
+2018-03-24T23:20:43: Analysis complete
+2018-03-24T23:20:43: Saving group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters"
+2018-03-24T23:20:44: [ERROR] django_filters.widgets.BaseCSVWidget.BaseCSVWidget: Unknown has no name
+2018-03-24T23:20:44: [ERROR] django_filters.widgets.LinkWidget.LinkWidget: Unknown has no name
+2018-03-24T23:20:44: End of group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters"
+2018-03-24T23:20:46: Deleting 0 files

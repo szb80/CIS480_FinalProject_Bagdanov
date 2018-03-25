@@ -12,6 +12,7 @@ a, h1, h2, h3, h4, h5, h6 {
 
 #px-header {
     text-shadow: 0 0 2px #000;
+    animation: 2s slide-in ease-in;
 }
 
 .btn-floating:hover {
@@ -20,6 +21,18 @@ a, h1, h2, h3, h4, h5, h6 {
 
 .footer-copyright {
     padding-left: 0.75rem;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-70%);
+        opacity: 0.0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Overrides for form styling in Materialize CSS*/

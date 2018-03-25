@@ -22,8 +22,8 @@ urlpatterns = [
     url(r'^collections/$', app.views.collections, name='collections'),
     url(r'^customerservice/$', app.views.customerservice, name='customer service'),
     url(r'^fieldservice/$', app.views.fieldservice, name='field service'),
-    url(r'^search/$', app.views.search, name='search'),
     url(r'^upload/$', app.views.upload, name='upload'),
+    url(r'^search/$', app.views.search, name='search'),
     url(r'^calendar/$', app.views.calendar, name='calendar'),
 
     url(r'^api/get_department/', app.views.get_department, name='get_department'),

@@ -9,11 +9,19 @@ from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, 
 from django.template import RequestContext
 from datetime import datetime
 from django.utils import timezone
+from django.contrib.auth.models import User
 from django.views.generic.edit import CreateView
 
-from .models import Document, Department
+from .models import Document, Department, Driver
 from .forms import *
+from .filters import UserFilter
 import json
+
+def search(request):
+    user_list = Driver.objects.all()
+    user_filter = UserFilter(request.GET, queryset=user_list)
+    return render(request, 'app/user_list.html', {'filter': user_filter})
+
 
 def get_department(request):
   if request.is_ajax():
@@ -30,18 +38,18 @@ def get_department(request):
   mimetype = 'application/json'
   return HttpResponse(data, mimetype)
 
-# search view 
-def search(request):
-    if request.is_ajax():
-        q = request.GET.get('q')
-        if q is not None:            
-            results = Document.objects.filter(  
-            	Q( title__contains = q ) |
-                Q( description__contains = q ) |
-                Q( description__contains = q )
-                )          
-            return render_to_response('results.html', {'results': results}, 
-                                       context_instance = RequestContext(request))
+## search view 
+#def search(request):
+#    if request.is_ajax():
+#        q = request.GET.get('q')
+#        if q is not None:            
+#            results = Document.objects.filter(  
+#            	Q( title__contains = q ) |
+#                Q( description__contains = q ) |
+#                Q( description__contains = q )
+#                )          
+#            return render_to_response('results.html', {'results': results}, 
+#                                       context_instance = RequestContext(request))
 
 
 def home(request):
@@ -116,19 +124,6 @@ def fieldservice(request):
         {
             'title':'Field Service',
             'message':'Your Field Service page.',
-            'year':datetime.now().year,
-        }
-    )
-
-def search(request):
-    """Renders the field service page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/searchtest.html',
-        {
-            'title':'Search Test',
-            'message':'Your search page.',
             'year':datetime.now().year,
         }
     )
