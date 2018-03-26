@@ -14,13 +14,13 @@ from django.views.generic.edit import CreateView
 
 from .models import Document, Department, Driver
 from .forms import *
-from .filters import UserFilter
+from .filters import UserFilter, DocumentFilter
 import json
 
 def search(request):
-    user_list = Driver.objects.all()
-    user_filter = UserFilter(request.GET, queryset=user_list)
-    return render(request, 'app/user_list.html', {'filter': user_filter})
+    document_list = Document.objects.all()
+    document_filter = DocumentFilter(request.GET, queryset=document_list)
+    return render(request, 'app/document_list.html', {'filter': document_filter})
 
 
 def get_department(request):
@@ -66,64 +66,83 @@ def home(request):
 
 def administration(request):
     """Renders the administration page."""
+    documents_administration = Document.objects.filter(department__exact=1, )
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/administration.html',
+        'app/department_template.html',
         {
             'title':'Administration',
             'year':datetime.now().year,
+            'filelist':documents_administration,
         }
     )
 
 def billing(request):
-    """Renders the billing page."""
+    """Renders the administration page."""
+    documents_billing = Document.objects.filter(department__exact=2, )
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/billing.html',
+        'app/department_template.html',
         {
             'title':'Billing',
-            'message':'Your billing page.',
             'year':datetime.now().year,
+            'filelist':documents_billing,
         }
     )
 
 def collections(request):
-    """Renders the contact page."""
+    """Renders the administration page."""
+    documents_collections = Document.objects.filter(department__exact=3, )
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/collections.html',
+        'app/department_template.html',
         {
             'title':'Collections',
-            'message':'Your collections page.',
             'year':datetime.now().year,
+            'filelist':documents_collections,
         }
     )
 
 def customerservice(request):
-    """Renders the contact page."""
+    """Renders the administration page."""
+    documents_customerservice = Document.objects.filter(department__exact=4, )
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/customer_service.html',
+        'app/department_template.html',
         {
             'title':'Customer Service',
-            'message':'Your Customer Service page.',
             'year':datetime.now().year,
+            'filelist':documents_customerservice,
         }
     )
 
 def fieldservice(request):
+    """Renders the administration page."""
+    documents_fieldservice = Document.objects.filter(department__exact=5, )
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/department_template.html',
+        {
+            'title':'Field Service',
+            'year':datetime.now().year,
+            'filelist':documents_fieldservice,
+        }
+    )
+
+def success(request):
     """Renders the field service page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/field_service.html',
+        'app/success.html',
         {
-            'title':'Field Service',
-            'message':'Your Field Service page.',
+            'title':'Success',
+            'message':'The file was successfully uploaded.',
             'year':datetime.now().year,
         }
     )
@@ -177,7 +196,7 @@ def upload(request):
             obj.save()
             # Without this next line the tags won't be saved.
             form.save_m2m()
-            return HttpResponseRedirect('app/success.html')
+            return render(request, 'app/success.html', {'document':obj}, )
 
         # validate form and save if success
         #if form.is_valid():
@@ -185,7 +204,7 @@ def upload(request):
             #form.save_m2m()
             #return HttpResponseRedirect('app/success.html') # send to success page
         else: # form was invalid and send to error page
-            return render(request, "app/error.html",) 
+            return render(request, 'error.html',) 
 
 
     elif request.method == "GET":

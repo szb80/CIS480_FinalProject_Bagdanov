@@ -4297,3 +4297,25 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extens
 2018-03-24T23:20:44: [ERROR] django_filters.widgets.LinkWidget.LinkWidget: Unknown has no name
 2018-03-24T23:20:44: End of group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\django_filters"
 2018-03-24T23:20:46: Deleting 0 files
+
+2018-03-24T23:44:21: Start analysis
+2018-03-24T23:44:21: IncludeModulesFromModulePath = win32com
+2018-03-24T23:44:24: Including c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks because widget_tweaks.models needs updating
+2018-03-24T23:44:24: Deleting 0 files
+2018-03-24T23:44:24: astropy.CallDepth = 0
+2018-03-24T23:44:24: delphixpy.CallDepth = 0
+2018-03-24T23:44:24: matplotlib.CallDepth = 3
+2018-03-24T23:44:24: pandas.CallDepth = 0
+2018-03-24T23:44:24: sympy.CallDepth = 0
+2018-03-24T23:44:24: Start group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks" with 5 files
+2018-03-24T23:44:25: Parsing complete
+2018-03-24T23:44:25: Analyzing "widget_tweaks.models" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\models.py")
+2018-03-24T23:44:25: Analyzing "widget_tweaks.tests" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\tests.py")
+2018-03-24T23:44:25: Analyzing "widget_tweaks" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\__init__.py")
+2018-03-24T23:44:25: Analyzing "widget_tweaks.templatetags.widget_tweaks" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\templatetags\widget_tweaks.py")
+2018-03-24T23:44:25: Analyzing "widget_tweaks.templatetags" ("c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks\templatetags\__init__.py")
+2018-03-24T23:44:25: Starting analysis of 5 modules
+2018-03-24T23:44:27: Analysis complete
+2018-03-24T23:44:27: Saving group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks"
+2018-03-24T23:44:27: End of group "c:\users\neo\source\repos\cis480_finalproject_bagdanov\cis480_finalproject_bagdanov\env\lib\site-packages\widget_tweaks"
+2018-03-24T23:44:30: Deleting 0 files

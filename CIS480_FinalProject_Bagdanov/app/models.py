@@ -23,10 +23,11 @@ class Document(models.Model):
     department = models.ForeignKey(Department)
     source_file = models.FileField(upload_to='documents/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
-    tags = TaggableManager()
+    tags = TaggableManager(blank=True)
+    slug = models.SlugField(max_length=100, unique=True)
 
     def get_absolute_url(self):
-        return reverse('uploadfileapp:home')
+        return (self.slug)
 
     def __str__(self):
         return self.title

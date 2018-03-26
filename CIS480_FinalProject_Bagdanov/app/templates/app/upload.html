@@ -1,11 +1,13 @@
-﻿<html>
-<head>
-<script src="../../static/app/scripts/bootstrap.js"></script>
-<link href="../../static/app/content/bootstrap.css" rel="stylesheet" />
-<link href="../../static/app/content/site.css" rel="stylesheet" />
-</head>
+﻿{% extends 'app/layout.html' %}
 
-<body>
+{% load staticfiles %}
+
+{% block head %}
+    <link href="{% static 'app/content/bootstrap.forms.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
 <div class="container">
     <div class="row">
         <h1>Upload a Document</h1>
@@ -22,11 +24,9 @@
                 </div>
             {% endfor %}
 
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default waves-effect waves-light">Submit</button>
         </form>
     </div>
-
 </div>
 
-</body>
-</html>
+{% endblock %}

@@ -1,9 +1,11 @@
 """
 Definition of urls for CIS480_FinalProject_Bagdanov.
 """
-
-from datetime import datetime
 from django.conf.urls import include, url
+from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+from datetime import datetime
 import django.contrib.auth.views
 from django.http import HttpResponseRedirect
 
@@ -11,9 +13,9 @@ import app.forms
 import app.views
 
 # Uncomment the next lines to enable the admin:
-from django.contrib import admin
 admin.autodiscover()
 
+app_name = 'app'
 urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
@@ -25,6 +27,7 @@ urlpatterns = [
     url(r'^upload/$', app.views.upload, name='upload'),
     url(r'^search/$', app.views.search, name='search'),
     url(r'^calendar/$', app.views.calendar, name='calendar'),
+    url(r'^upload/success/$', app.views.success, name='success'),
 
     url(r'^api/get_department/', app.views.get_department, name='get_department'),
 
@@ -59,8 +62,7 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-]
+] 
 
-
-
-
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

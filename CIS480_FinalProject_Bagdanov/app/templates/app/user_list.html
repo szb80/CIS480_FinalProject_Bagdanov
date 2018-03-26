@@ -1,46 +1,13 @@
-﻿{% extends 'layout.html' %}
-
-{% load widget_tweaks %}
+﻿{% extends 'app/layout.html' %}
 
 {% block content %}
   <form method="get">
-    <div class="well">
-      <h4 style="margin-top: 0">Filter</h4>
-      <div class="row">
-        <div class="form-group col-sm-4 col-md-3">
-          {{ filter.form.first_name.label_tag }}
-          {% render_field filter.form.first_name class="form-control" %}
-        </div>
-        <div class="form-group col-sm-4 col-md-3">
-          {{ filter.form.last_name.label_tag }}
-          {% render_field filter.form.last_name class="form-control" %}
-        </div>
-=
-      </div>
-      <button type="submit" class="btn btn-primary">
-        <span class="glyphicon glyphicon-search"></span> Search
-      </button>
-    </div>
+    {{ filter.form.as_p }}
+    <button type="submit">Search</button>
   </form>
-
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>First name</th>
-        <th>Last name</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for user in filter.qs %}
-        <tr>
-          <td>{{ user.first_name }}</td>
-          <td>{{ user.last_name }}</td>
-        </tr>
-      {% empty %}
-        <tr>
-          <td colspan="5">No data</td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  <ul>
+  {% for driver in filter.qs %}
+    <li>{{ driver.first_name }} - {{ driver.last_name }}</li>
+  {% endfor %}
+  </ul>
 {% endblock %}
