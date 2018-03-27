@@ -15,7 +15,6 @@ import app.views
 # Uncomment the next lines to enable the admin:
 admin.autodiscover()
 
-app_name = 'app'
 urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
@@ -29,13 +28,6 @@ urlpatterns = [
     url(r'^calendar/$', app.views.calendar, name='calendar'),
     url(r'^upload/success/$', app.views.success, name='success'),
 
-    url(r'^api/get_department/', app.views.get_department, name='get_department'),
-
-    # TESTING template to test div layout
-    url(r'^default$', app.views.default, name='default'),
-    url(r'^register/$', app.views.adddriver, name='adddriver'),
-
-    #################################
 
     url(r'^login/$',
         django.contrib.auth.views.login,
@@ -55,14 +47,8 @@ urlpatterns = [
             'next_page': '/',
         },
         name='logout'),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
+    
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-] 
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

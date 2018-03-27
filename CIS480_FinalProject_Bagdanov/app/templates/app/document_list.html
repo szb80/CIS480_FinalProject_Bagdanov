@@ -17,10 +17,24 @@
     </form>
 
     <h1>Results</h1>
-    <ul>
-        {% for doc in filter.qs %}
-            <li>{{ doc.title }} - {{ doc.description }}</li>
-        {% endfor %}
-    </ul>
+    <table class="striped highlight">
+        <thead>
+            <tr>
+                <td>Department</td>
+                <td>Title</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for doc in filter.qs %}
+                <tr>
+                    <td>{{ doc.department }}</td>
+                    <td><a href="{{ doc.source_file.url }}" target="_blank">{{ doc.title }}</a></td>
+                    <td>{{ doc.description }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 {% endblock %}

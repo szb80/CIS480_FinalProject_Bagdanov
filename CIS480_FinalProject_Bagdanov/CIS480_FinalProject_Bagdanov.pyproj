@@ -73,17 +73,6 @@
     <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templates\" />
     <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templates\fileupload\" />
     <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templatetags\" />
-    <Folder Include="fileupload\" />
-    <Folder Include="fileupload\migrations\" />
-    <Folder Include="fileupload\static\" />
-    <Folder Include="fileupload\static\css\" />
-    <Folder Include="fileupload\static\img\" />
-    <Folder Include="fileupload\static\js\" />
-    <Folder Include="fileupload\static\js\cors\" />
-    <Folder Include="fileupload\static\js\vendor\" />
-    <Folder Include="fileupload\templates\" />
-    <Folder Include="fileupload\templates\fileupload\" />
-    <Folder Include="fileupload\templatetags\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\app\content\bootstrap.css" />
@@ -109,23 +98,11 @@
     <Content Include="app\static\img\progressbar.gif" />
     <Content Include="app\static\app\scripts\init.js" />
     <Content Include="app\templates\app\calendar.html" />
-    <Content Include="app\templates\app\default.html" />
     <Content Include="app\templates\app\department_template.html" />
     <Content Include="app\templates\app\footer.html" />
-    <Content Include="app\templates\app\registerdriver.html" />
-    <Content Include="app\templates\app\searchtest.html" />
     <Content Include="app\templates\app\success.html" />
-    <Content Include="app\templates\app\topnavbar.html" />
     <Content Include="app\templates\app\upload.html" />
-    <Content Include="app\templates\app\search.html" />
-    <Content Include="app\templates\app\administration.html" />
-    <Content Include="app\templates\app\billing.html" />
-    <Content Include="app\templates\app\collections.html" />
-    <Content Include="app\templates\app\customer_service.html" />
-    <Content Include="app\templates\app\field_service.html" />
-    <Content Include="app\templates\app\sidebar.html" />
     <Content Include="app\templates\app\document_list.html" />
-    <Content Include="app\templates\app\user_list.html" />
     <Content Include="requirements.txt" />
     <Content Include="app\static\app\content\site.css" />
     <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />

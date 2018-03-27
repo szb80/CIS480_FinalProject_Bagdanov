@@ -9,34 +9,17 @@ from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, 
 from django.template import RequestContext
 from datetime import datetime
 from django.utils import timezone
-from django.contrib.auth.models import User
 from django.views.generic.edit import CreateView
 
-from .models import Document, Department, Driver
+from .models import Document, Department
 from .forms import *
-from .filters import UserFilter, DocumentFilter
+from .filters import DocumentFilter
 import json
 
 def search(request):
     document_list = Document.objects.all()
     document_filter = DocumentFilter(request.GET, queryset=document_list)
     return render(request, 'app/document_list.html', {'filter': document_filter})
-
-
-def get_department(request):
-  if request.is_ajax():
-    q = request.GET.get('term', '')
-    depts = Department.objects.filter(name__icontains=q)
-    results = []
-    for d in depts:
-      d_json = {}
-      d_json = d.name
-      results.append(d_json)
-    data = json.dumps(results)
-  else:
-    data = 'fail'
-  mimetype = 'application/json'
-  return HttpResponse(data, mimetype)
 
 def home(request):
     """Renders the home page."""
@@ -145,33 +128,6 @@ def calendar(request):
         }
     )
 
-############################################################################
-def default(request):
-    """Renders the field service page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/default.html',
-        {
-            'title':'Default',
-            'message':'Your default page format.',
-            'year':datetime.now().year,
-        }
-    )
-
-def documentationdetail(request):
-    """Renders the field service page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/documentationdetail.html',
-        {
-            'title':'Documentation Detail',
-            'message':'Your documentation detail page format.',
-            'year':datetime.now().year,
-        }
-    )
-
 def upload(request):
     if request.method == "POST":
         form = DocumentForm(request.POST, request.FILES)
@@ -184,33 +140,9 @@ def upload(request):
             form.save_m2m()
             return render(request, 'app/success.html', {'document':obj}, )
 
-        # validate form and save if success
-        #if form.is_valid():
-            #form.save()
-            #form.save_m2m()
-            #return HttpResponseRedirect('app/success.html') # send to success page
         else: # form was invalid and send to error page
             return render(request, 'error.html',) 
-
 
     elif request.method == "GET":
         form = DocumentForm()
     return render(request, "app/upload.html", {'form': form})
-
-
-#############################################################################
-def adddriver(request):
-    if request.method == "POST":
-        form = adddriverform(request.POST)
-        if form.is_valid():
-            form = form.save(commit=False)
-            form.save()
-            return HttpResponseRedirect('/roster/')
-        else:
-            return HttpResponseRedirect('/')
-
-    elif request.method == "GET":
-        form = adddriverform()
-        return render(request, "app/registerdriver.html", {'form': form})
-
-#################################################################################

@@ -34,7 +34,7 @@
                             {% for obj in filelist %}
                                 <li class="collection-item avatar">
                                     <i class="material-icons circle blue">folder</i>
-                                    <span class="title"><a href="{{ obj.document.url }}">{{ obj.title }}</a></span>
+                                    <span class="title"><a href="{{ obj.source_file.url }}" target="_blank">{{ obj.title }}</a></span>
                                     <p>{{ obj.description }}
                                     <br />
                                     <i class="grey-text lighten-3"><small>{{ obj.uploaded_at.date }}</small></i></p>

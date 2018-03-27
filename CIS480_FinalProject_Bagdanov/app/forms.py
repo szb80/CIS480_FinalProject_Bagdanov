@@ -29,14 +29,3 @@ class DocumentForm(forms.ModelForm):
         model = Document
         fields = ['title', 'description', 'department', 'tags', 'source_file', ]
         #widgets = { 'description': Textarea(), }
-
-
-##################################################################################
-
-class adddriverform(forms.ModelForm):
-    class Meta:
-        model = Driver
-        fields = ['first_name', 'last_name', 'dob', 'city', 'car_make', 'car_model']
-        widgets = {'dob': SelectDateWidget(years=range((datetime.now().year - 14),1900,-1))}
-
-###############################################################################
