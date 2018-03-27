@@ -38,20 +38,6 @@ def get_department(request):
   mimetype = 'application/json'
   return HttpResponse(data, mimetype)
 
-## search view 
-#def search(request):
-#    if request.is_ajax():
-#        q = request.GET.get('q')
-#        if q is not None:            
-#            results = Document.objects.filter(  
-#            	Q( title__contains = q ) |
-#                Q( description__contains = q ) |
-#                Q( description__contains = q )
-#                )          
-#            return render_to_response('results.html', {'results': results}, 
-#                                       context_instance = RequestContext(request))
-
-
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)

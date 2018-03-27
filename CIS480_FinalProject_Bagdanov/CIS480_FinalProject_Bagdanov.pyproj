@@ -73,6 +73,17 @@
     <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templates\" />
     <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templates\fileupload\" />
     <Folder Include="C:\Users\Neo\source\repos\CIS480_FinalProject_Bagdanov\CIS480_FinalProject_Bagdanov\fileupload\templatetags\" />
+    <Folder Include="fileupload\" />
+    <Folder Include="fileupload\migrations\" />
+    <Folder Include="fileupload\static\" />
+    <Folder Include="fileupload\static\css\" />
+    <Folder Include="fileupload\static\img\" />
+    <Folder Include="fileupload\static\js\" />
+    <Folder Include="fileupload\static\js\cors\" />
+    <Folder Include="fileupload\static\js\vendor\" />
+    <Folder Include="fileupload\templates\" />
+    <Folder Include="fileupload\templates\fileupload\" />
+    <Folder Include="fileupload\templatetags\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\app\content\bootstrap.css" />

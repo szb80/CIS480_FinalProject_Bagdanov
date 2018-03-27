@@ -1,25 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - UBCI</title>
-    {% load staticfiles %}
-    <!-- Import CSS -->
-    <link type="text/css" rel="stylesheet" href="{% static 'app/content/materialize.css' %}"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="{% static 'app/content/site.css' %}" />
-    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
-    <!-- Import Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-    <!-- top navbar include -->
-    {% include 'app/topnavbar.html' %}
+﻿{% extends 'app/layout.html' %}
+
+{% block content %}
 
     <!-- template content block -->
     <div class="px-wrapper">
         <section class="px-section parallax bg1">
-            <h1 >UBCI</hi>
+            <h1 >UBCI</h1>
         </section>
     </div>
 
@@ -53,38 +39,4 @@
         </div>
     </div> <!-- end dept links -->
 
-
-    <!-- footer include -->
-    {% include 'app/footer.html' %}
-
-    <!-- JQuery and Materialize JS -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static 'app/scripts/materialize.min.js' %}"></script>
-    <script src="{% static 'app/scripts/init.js' %}"></script>
-
-{% block scripts %}{% endblock %}
-
-</body>
-</html>
-
-
-
-
-
-
-<!-- header banner
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br>
-            <br>
-            <h1 class="header center white-text blur">{{ title }}</h1>
-            <br>
-            <br>
-        </div>
-    </div>
-    <div class="parallax">
-        
-    </div>
-</div>
-end header banner -->
+{% endblock %}
